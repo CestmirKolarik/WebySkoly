@@ -23,7 +23,8 @@
     
     include './DB.php';
 
-    $sql = "SELECT * FROM `mesto`, `skola` WHERE mesto.id = skola.mesto";
+    $sql = "SELECT * FROM `mesto`, `skola`, `pocet_prijatych` WHERE mesto.id = skola.mesto AND skola.id = pocet_prijatych.skola";
+//    $sql = "select pocet_prijatych.pocet, pocet_prijatych.skola, skola.nazev, skola.id from skola, pocet_prijatych where pocet_prijatych.skola = skola.id";
     $result = $conn->query($sql);
     
     
@@ -49,7 +50,11 @@
 //              echo $row["skola"];
 //              echo "</td>";
               
-          echo "</tr>";
+              echo"<td>";
+              echo$row["pocet"];
+              echo"</td>";
+              
+              echo "</tr>";
 
           
           

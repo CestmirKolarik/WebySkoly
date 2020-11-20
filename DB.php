@@ -16,7 +16,8 @@ $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 //echo "Connected successfully";
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Connectif ($conn->connect_error) {
+ion failed: " . $conn->connect_error);
 }
 
 /* change character set to utf8 */
