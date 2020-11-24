@@ -1,6 +1,6 @@
 <?php 
 
-    include './hlavicka.php';
+include './hlavicka.php';
 
 ?>
 
@@ -10,13 +10,13 @@
             <div class="form-group">
 
                 <label for="email">Přihlašovací jméno: </label>
-                <input type ="text" class="form-control" name ="username">
+                <input type ="text" class="form-control" name ="jmeno">
 
             </div>
             <div class="form-group">
 
                 <label for="pwd">Heslo:</label>
-                <input type="password" class="form-control" name="password">
+                <input type="password" class="form-control" name="heslo">
 
             </div>
             <div class="form-group form-check">
