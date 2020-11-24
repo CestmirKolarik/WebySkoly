@@ -29,6 +29,35 @@ and open the template in the editor.
     </head>
     <body>
         
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            
+            <ul class="navbar-nav">
+
+                <li class="nav-item active">
+                    <form action="index.php" method="post">  
+                        <button type="submit" class="btn btn-success">Výpis škol</button>
+                    </form>
+                </li>
+                
+                <li class="nav-item active">
+                    <form action="mapa.php" method="post">  
+                        <button type="submit" class="btn btn-success">Mapa</button>
+                    </form>
+                </li>
+                
+                <li class="nav-item active">
+                    <form action="nactiBackend.php" method="post">  
+                        <button type="submit" class="btn btn-success">BackEnd</button>
+                    </form>
+                </li>
+                
+
+            </ul>
+            
+            
+        </nav>
+        
+        
         <div class="container">
         <?php
         ?>
